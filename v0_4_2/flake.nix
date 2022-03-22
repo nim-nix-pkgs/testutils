@@ -1,5 +1,5 @@
 {
-  description = ''A comprehensive toolkit for all your testing needs'';
+  description = ''A unittest framework'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-testutils-v0_4_2.flake = false;
   inputs.src-testutils-v0_4_2.owner = "status-im";
-  inputs.src-testutils-v0_4_2.ref   = "refs/tags/v0.4.2";
+  inputs.src-testutils-v0_4_2.ref   = "v0_4_2";
   inputs.src-testutils-v0_4_2.repo  = "nim-testutils";
   inputs.src-testutils-v0_4_2.type  = "github";
   
