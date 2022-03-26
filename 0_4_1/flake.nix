@@ -11,6 +11,7 @@
   inputs.src-testutils-0_4_1.ref   = "refs/tags/0.4.1";
   inputs.src-testutils-0_4_1.owner = "status-im";
   inputs.src-testutils-0_4_1.repo  = "nim-testutils";
+  inputs.src-testutils-0_4_1.dir   = "";
   inputs.src-testutils-0_4_1.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

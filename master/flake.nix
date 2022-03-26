@@ -11,6 +11,7 @@
   inputs.src-testutils-master.ref   = "refs/heads/master";
   inputs.src-testutils-master.owner = "status-im";
   inputs.src-testutils-master.repo  = "nim-testutils";
+  inputs.src-testutils-master.dir   = "";
   inputs.src-testutils-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
