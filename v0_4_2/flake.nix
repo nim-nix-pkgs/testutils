@@ -11,8 +11,15 @@
   inputs.src-testutils-v0_4_2.ref   = "refs/tags/v0.4.2";
   inputs.src-testutils-v0_4_2.owner = "status-im";
   inputs.src-testutils-v0_4_2.repo  = "nim-testutils";
-  inputs.src-testutils-v0_4_2.dir   = "";
   inputs.src-testutils-v0_4_2.type  = "github";
+  
+  inputs."unittest2".owner = "nim-nix-pkgs";
+  inputs."unittest2".ref   = "master";
+  inputs."unittest2".repo  = "unittest2";
+  inputs."unittest2".dir   = "v0_0_3";
+  inputs."unittest2".type  = "github";
+  inputs."unittest2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."unittest2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
